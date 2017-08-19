@@ -15,8 +15,9 @@ adminemail: admin@branchable.com
 adminuser:
 - http://joeyh.name/
 - https://www.google.com/accounts/o8/id?id=AItOawkeKIPnjuWDB4uS8vW09DfK7FPAGQxfFs0
-- pabs@debian.org
+- myrepos.branchable.com@pobox.madduck.net
 - pabs3@bonedaddy.net
+- pabs@debian.org
 # users who are banned from the wiki
 banned_users: []
 # where the source of the wiki is located
@@ -118,7 +119,7 @@ libdirs: []
 # extra library and plugin directory (searched after libdirs)
 libdir: /home/b-myrepos/.ikiwiki
 # environment variables
-ENV: {}
+#ENV: ''
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -328,8 +329,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -354,10 +355,6 @@ comments_pagename: comment_
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
@@ -417,9 +414,9 @@ archivebase: archives
 # PageSpec of pages to include in the archives, if option `calendar_autocreate` is true.
 archive_pagespec: page(posts/*) and !*/Discussion
 # autocreate new calendar pages?
-#calendar_autocreate: 1
+calendar_autocreate: 1
 # if set, when building calendar pages, also build pages of year and month when no pages were published (building empty calendars).
-#calendar_fill_gaps: 1
+calendar_fill_gaps: 1
 
 # img plugin
 # Image formats to process (jpeg, png, gif, svg, pdf or 'everything' to accept all)
