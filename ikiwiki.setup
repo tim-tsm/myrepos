@@ -119,7 +119,7 @@ libdirs: []
 # extra library and plugin directory (searched after libdirs)
 libdir: /home/b-myrepos/.ikiwiki
 # environment variables
-#ENV: ''
+ENV: {}
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -329,8 +329,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, google, goto,
-#    mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
+#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -355,6 +355,10 @@ comments_pagename: comment_
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
+
+# getsource plugin
+# Mime type for returned source.
+#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
