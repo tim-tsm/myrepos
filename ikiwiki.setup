@@ -181,7 +181,6 @@ gitmaster_branch: master
 # gitpush plugin
 # git repository urls that changes are pushed to
 git_push_to:
-- git@github.com:joeyh/myrepos.git
 - joey@git.kitenet.net:/srv/git/mr.git
 
 # htmlscrubber plugin
