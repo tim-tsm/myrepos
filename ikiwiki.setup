@@ -250,7 +250,7 @@ emailauth_sender: login@branchable.com
 
 # lockedit plugin
 # PageSpec controlling which pages are locked
-locked_pages: '* and !postcomment(*) and !todo/*'
+locked_pages: '* and !postcomment(*) and !todo/* and !forum/*'
 
 # moderatedcomments plugin
 # PageSpec matching users or comment locations to moderate
