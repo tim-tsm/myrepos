@@ -13,14 +13,15 @@ wikiname: myrepos
 adminemail: admin@branchable.com
 # users who are wiki admins
 adminuser:
+- PaulWise
 - http://joeyh.name/
 - https://www.google.com/accounts/o8/id?id=AItOawkeKIPnjuWDB4uS8vW09DfK7FPAGQxfFs0
+- id@joeyh.name
 - myrepos.branchable.com@pobox.madduck.net
 - pabs3@bonedaddy.net
 - pabs@debian.org
 - spwhitton
 - spwhitton@spwhitton.name
-- id@joeyh.name
 # users who are banned from the wiki
 banned_users: []
 # where the source of the wiki is located
