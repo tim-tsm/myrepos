@@ -14,6 +14,7 @@ adminemail: admin@branchable.com
 # users who are wiki admins
 adminuser:
 - PaulWise
+- anarcat@debian.org
 - http://joeyh.name/
 - https://www.google.com/accounts/o8/id?id=AItOawkeKIPnjuWDB4uS8vW09DfK7FPAGQxfFs0
 - id@joeyh.name
