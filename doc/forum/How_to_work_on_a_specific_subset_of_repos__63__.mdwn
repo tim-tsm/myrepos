@@ -23,3 +23,7 @@ and then run the update operation with something like
 
     mr --select-repos-with-tags=TaskA  update
 
+> There is now a --no-default-config option that you can use. Combined
+> with --config, you can load only a specific config file and,
+> combined with the include directive, you can split your config files
+> according to taste. -- [[anarcat]]

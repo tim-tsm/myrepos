@@ -751,6 +751,7 @@ use constant {
 
 # configurables
 my $config_overridden=0;
+my $default_config=1;
 my $verbose=0;
 my $minimal=0;
 my $quiet=0;
@@ -2312,6 +2313,7 @@ sub getopts {
 	my $result=GetOptions(
 		"d|directory=s" => sub { $directory=safe_abs_path($_[1]) },
 		"c|config=s" => sub { $ENV{MR_CONFIG}=$_[1]; $config_overridden=1 },
+		"nc|no-default-config" => sub { $default_config = 0 },
 		"cache" => \$save_cache,
 		"cached" => \$print_cache,
 		"uncache" => \$remove_cache,
@@ -2414,7 +2416,9 @@ sub main {
 	help(@ARGV) if $ARGV[0] eq 'help';
 
 	startingconfig();
-	loadconfig($HOME_MR_CONFIG);
+	if ($default_config) {
+	    loadconfig($HOME_MR_CONFIG);
+	}
 	loadconfig($ENV{MR_CONFIG});
 	#use Data::Dumper; print Dumper(\%config);
 

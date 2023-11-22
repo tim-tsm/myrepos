@@ -12,6 +12,9 @@ myrepos (1.20180727) UNRELEASED; urgency=medium
     Ensures that 'dgit fetch' will work if the currently checked out
     branch does not include debian/control.
 
+  [ Antoine Beaupré ]
+  * Allow disabling the default ~/.mrconfig with --no-default-config
+
  -- Joey Hess <id@joeyh.name>  Tue, 21 Jan 2020 15:12:43 -0400
 
 myrepos (1.20180726) unstable; urgency=medium

@@ -1,1 +1,6 @@
 It would be nice to be able to tag repositories and then have commands only apply to some subset of them. For example, some repos might be built with Python's setup.py while others with plain make. It'd be nice to be able to mark commands as only making sense for certain tags.
+
+> [[done]]: there is now a --no-default-config option that you can use. Combined
+> with --config, you can load only a specific config file and,
+> combined with the include directive, you can split your config files
+> according to taste. -- [[anarcat]]

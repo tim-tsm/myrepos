@@ -10,3 +10,8 @@ How can I skip checking all repositories in ~/.mrconfig if I explicitly ask to u
     mr -c mrconfig -t -n 1 status
 
 but `-n 1` looks a bit redundant and wrong for such case (I know that I can skip the *-t* flag with .mrtrust).
+
+> There is now a --no-default-config option that you can use. Combined
+> with --config, you can load only a specific config file and,
+> combined with the include directive, you can split your config files
+> according to taste. -- [[anarcat]]
