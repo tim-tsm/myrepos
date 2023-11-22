@@ -2419,7 +2419,10 @@ sub main {
 	if ($default_config) {
 	    loadconfig($HOME_MR_CONFIG);
 	}
-	loadconfig($ENV{MR_CONFIG});
+	# only load the specified config if non-default
+	if ($ENV{MR_CONFIG} ne $HOME_MR_CONFIG) {
+	    loadconfig($ENV{MR_CONFIG});
+	}
 	#use Data::Dumper; print Dumper(\%config);
 
 	my $action=expandaction(shift @ARGV);
